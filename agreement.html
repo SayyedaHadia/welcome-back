@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agreement Page</title>
+   <style>
+    *{
+      box-sizing: border-box;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: white;
+      font-family: "Poppins", sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+
+    .agreement-container {
+      max-width: 500px;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .agreement-container p {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .checkbox-item {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 15px;
+      gap: 10px;
+      font-size: 1.2rem;
+      line-height: 1.4;
+    }
+
+    .number{
+      font-weight:bold;
+    }
+
+    /* Button Center + Big */
+  #agree-btn{
+    margin-top: 25px;
+    background: #8fb1c2;
+    border: none;
+    padding: 10px 20px;   /* پہلے والا سائز واپس */
+    border-radius: 10px;
+    color: #003049;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-size: 1rem;      /* فونٹ سائز چھوٹا */
+    
+    /* بٹن کو بڑا اور سینٹر رکھنے کیلئے */
+    width: 80%;           
+    max-width: 350px;     
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #agree-btn:hover{
+    background:#a7c7d6;
+  }
+    /* ----- Mobile Responsive ----- */
+    @media (max-width: 600px) {
+
+      body{
+        height: auto;
+        padding: 20px;
+        align-items: flex-start;
+      }
+
+      .agreement-container{
+        padding: 18px;
+      }
+
+      .agreement-container p{
+        font-size: 1.3rem;
+      }
+
+      .checkbox-item{
+        font-size: 1rem;
+      }
+
+      #agree-btn{
+        width: 100%;
+        font-size: 1.1rem;
+      }
+    }
+
+  </style>
+</head>
+<body>
+ <div class="agreement-container">
+ <p style="font-size: 2rem; font-weight: bold; margin-bottom: 20px; text-align: center;">Agreement:</p>
+
+  <div class="checkbox-item">
+    <span class="number">1.</span>
+    <span>We will never cheat on each other.</span>
+  </div>
+
+  <div class="checkbox-item">
+    <span class="number">2.</span>
+    <span>We will not leave each other in any situation.</span>
+  </div>
+
+  <div class="checkbox-item">
+    <span class="number">3.</span>
+    <span>We will not stay upset with each other for more than 12 hours</span>
+  </div>
+
+  <div class="checkbox-item">
+    <span class="number">4.</span>
+    <span>If someone apologizes and accepts their mistake, we will not stay upset for long.</span>
+  </div>
+
+  <div class="checkbox-item">
+    <span class="number">5.</span>
+    <span>We will not lie to each other</span>
+  </div>
+
+  <div class="checkbox-item">
+    <span class="number">6.</span>
+    <span>We will trust each other</span>
+  </div>
+
+  <div class="checkbox-item">
+    <span class="number">7.</span>
+    <span>We will try to understand each other</span>
+  </div>
+
+  <div class="checkbox-item">
+    <span class="number">8.</span>
+    <span>We will not hide anything from each other.</span>
+  </div>
+
+  <div class="checkbox-item">
+    <span class="number">9.</span>
+    <span>We will not bring up past mistakes again.</span>
+  </div>
+
+  <div class="checkbox-item">
+    <span class="number">10.</span>
+    <span>We will share our account passwords, but accessing the other person’s account is completely their choice.</span>
+  </div>
+
+  <button id="agree-btn">
+    I Agree
+  </button>
+</div>
+
+  <script>
+    document.getElementById("agree-btn").addEventListener("click", function() {
+      window.location.href = "congratulations.html";
+    });
+  </script>
+
+</body>
+</html>

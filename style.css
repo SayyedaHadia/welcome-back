@@ -1,0 +1,174 @@
+ 
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
+}
+
+/* ===== TOP MESSAGE SECTION ===== */
+.top-message {   
+  text-align: center;
+  padding: 30px 20px; 
+}
+
+.top-message h1 {
+  color: #4ac2ff;
+  margin-bottom: 10px;
+}
+
+#message {
+  margin: 10px auto 15px;
+  max-width: 600px;
+  font-size: 1.05rem;
+  color: #e6f7ff;
+}
+
+button {
+  background: #4ac2ff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  color: #003049;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background: #6ed4ff;
+}
+
+ /* Images container */
+    .image-box{
+      margin-top:30px;
+      display:flex;
+      justify-content:center;
+      gap:30px;     /* distance between pics */
+      flex-wrap:wrap;
+    }
+
+    .image-box img{
+      width:300px;      /* pic width */
+      height:300;      /* height auto so pic stretch na ho */
+      border-radius:12px;
+      object-fit:cover;
+      box-shadow:0 6px 15px rgba(0,0,0,0.15);
+      transition:transform .2s;
+    }
+
+    .image-box img:hover{
+      transform:scale(1.05);
+    }
+/* ===== FIRST LOVE NOTE ===== */
+.love-note,
+.new-note {
+  max-width: 850px;
+  margin: 25px auto;
+  padding: 18px 22px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  text-align: center;
+}
+
+.love-note p,
+.new-note p {
+  font-size: 1.05rem;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 1.75;
+  color: #eaf7ff;
+}
+
+.highlight {
+  color: #4ac2ff;
+  font-weight: 800;
+}
+
+/* ===== PROMISES ===== */
+.promises {
+  max-width: 880px;
+  margin: 25px auto 45px;
+  padding: 22px 26px;
+  border-radius: 18px;
+  background: rgba(0, 0, 0, 0.45);
+  box-shadow: 0 10px 26px rgba(0,0,0,0.35);
+  text-align: center;
+}
+
+.promises h2 {
+  margin-bottom: 15px;
+  color: #4ac2ff;
+}
+
+.promises ul {
+  list-style: none;
+  padding: 0;
+}
+
+.promises li {
+  margin: 10px 0;
+  font-weight: 600;
+  color: #eaf7ff;
+  line-height: 1.6;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 480px) {
+  .slider {
+    max-width: 300px;
+  }
+
+  .slide img{
+    height: 300px;   /* موبائل پر تھوڑی کم */
+  }
+}
+
+
+  #message {
+    font-size: 0.95rem;
+  }
+
+  .love-note p,
+  .new-note p {
+    font-size: 0.98rem;
+  }
+  .agreement-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: white;
+}
+
+.agreement-text {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+#agree-btn {
+  background: #4ac2ff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: #003049;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#agree-btn:hover {
+  background: #6ed4ff;
+}
